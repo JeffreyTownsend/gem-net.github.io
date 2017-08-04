@@ -1,0 +1,16 @@
+<p markdown="1"><span class="text-primary">**C-GEM**</span> seeks to solve a “Holy Grail” level problem in modern science: the inability to prepare polymers whose monomers are defined with protein-like control. Sequence-defined polymers possess extraordinary potential for information storage, anti-counterfeiting, drug delivery, remediation, even drug discovery, but strategies to prepare them are barely in their infancy. C-GEM will synthesize sequence-defined chemical polymers by repurposing the *E. coli* translational apparatus to promote bond-forming reactions between monomers that are not a-amino acids, but instead the building blocks for aramids, polyolefins, polyurethanes, even polyketide precursors.</p>
+
+<div class="collapse" id="collapseExample">
+	<p markdown="1">This goal demands orthogonal enzymes that acylate orthogonal tRNAs with each monomer, efficiently and *in vivo*; orthogonal ribosomes that accept these tRNAs as substrates and elongate the products; genomically recoded organisms with multiple open codons to enable mRNA-templated synthesis of sequence-defined polymers; and high-resolution structural data to deepen understanding and inform design.</p>
+
+	<p markdown="1">`Phase I` efforts will develop the multi-disciplinary tools and technologies to accomplish this goal. In `Phase II`, an expanded team of chemists, biologists, engineers, computational and materials scientists, and industrial partners will expand these efforts to biosynthesize, characterize, and interrogate multiple classes of truly exotic chemical polymers, containing 3 or more distinct monomers per class—products that can only be generated in recoded organisms whose ribosomes support novel chemistries.</p>
+
+	<p class="text-primary">Sequence-defined chemical polymers are the materials of tomorrow.</p>
+</div>
+
+<!-- <button class="btn btn-info btn-sm collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> -->
+<a class="collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  <span class="if-collapsed">Read more...</span>
+  <span class="if-not-collapsed" style="display:none;">Read less...</span>
+</a>
+

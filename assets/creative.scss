@@ -11,5 +11,12 @@
 
 /* any style customization must be before the bootstrap import */
 
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}
+
 @import "creative/creative";
 // @import "bootstrap/bootstrap";

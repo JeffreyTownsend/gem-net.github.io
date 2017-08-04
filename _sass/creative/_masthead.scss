@@ -5,7 +5,7 @@ header.masthead {
     min-height: auto;
     text-align: center;
     color: white;
-    background-image: url('../img/header.jpg');
+    background-image: url('/img/How_proteins_are_made_NSF_dark.jpg');
     background-position: center;
     @include background-cover;
     .header-content {
@@ -20,6 +20,7 @@ header.masthead {
                 margin-top: 0;
                 margin-bottom: 0;
                 text-transform: uppercase;
+                text-shadow: black 0.1em 0.1em 0.2em;
             }
             hr {
                 margin: 30px auto;
@@ -28,7 +29,9 @@ header.masthead {
                 font-size: 16px;
                 font-weight: 300;
                 margin-bottom: 50px;
-                color: fade-out(white, .3);
+                // color: fade-out(white, .1);
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.2em;
             }
         }
     }
