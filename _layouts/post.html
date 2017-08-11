@@ -1,25 +1,56 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+<div class="row">
+  <nav class="col-md-3 hidden-xs-down sidebar pt-3">
+    <h6 class="text-muted pt-3">News</h6>
+    <ul class="nav nav-pills flex-column">
+  {% for post in site.posts %}
+    {% if page.url == post.url %}
+      {% assign active_str = "active" %}
+    {% else %}
+      {% assign active_str = "" %}
+    {% endif %}
+    <li class="nav-item">
+      <a class="nav-link {{ active_str }}" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
+  {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="col-md-9">
+    <div class="row">
+      <main class="offset-md-1 col-md-10 material-box">
+        <div class="pt-3">
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+            <header class="post-header">
+              <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+              <p class="post-meta text-muted">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                  {{ page.date | date: date_format }}
+                </time>
+                {% if page.author %}
+                  • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">by {{ page.author }}</span></span>
+                {% endif %}</p>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+              {{ content }}
+            </div>
+
+            {% if site.disqus.shortname %}
+              {% include disqus_comments.html %}
+            {% endif %}
+          </article>
+        </div>
+      </main>
+    </div>
   </div>
+</div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+
+
+

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: GEM-NET Home
 ---
 
@@ -9,16 +9,14 @@ title: GEM-NET Home
             <h1 id="homeHeading">Center for Genomically Encoded Materials</h1>
             <hr>
             <p>Transforming the fabric of society with genetically encoded chemical polymers</p>
-            <a class="btn btn-primary btn-xl" href="#mission">Learn More</a>
+            <a class="btn btn-primary btn-xl" href="#about">Learn More</a>
         </div>
     </div>
     <div style="position:absolute;right:5px;bottom:0px"><h6 class="text-faded"><small>Illustration by Nicolle Rager, NSF</small></h6></div>
 </header>
 
 
-
-
-<section id="services">
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -53,7 +51,7 @@ title: GEM-NET Home
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                    <a href="#news"><h3>Latest News</h3></a>
+                    <a href="news"><h3>Latest News</h3></a>
                     <p class="text-muted">Hot off the press</p>
                 </div>
             </div>
@@ -86,14 +84,14 @@ title: GEM-NET Home
                 <i class="fa fa-4x fa-flask text-primary sr-icons"></i>
                 <!-- <hr class="primary"> -->
                 <div markdown="1">{% include txt/science.txt %}</div>
-                <!-- <a class="btn btn-primary btn-xl sr-button" href="#services">Get Started!</a> -->
+                <a class="btn btn-primary btn-xl sr-button" href="#team">The Team</a>
             </div>
         </div>
     </div>
 </section>
 
 
-<section id="team" style="background-color: whitesmoke;">
+<section id="team" class="bg-faded">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -101,17 +99,27 @@ title: GEM-NET Home
                 <hr class="primary">
             </div>
         </div>
+{% for person in site.data.key_members %}
+    {% assign row_ind = forloop.index0 | modulo:3 %}
+    {% assign offset_class = "" %}
+    {% if row_ind == 0  %}
+        {% if forloop.rindex == 1  %}  <!-- SET OFFSET FOR LAST ROW -->
+            {% assign offset_class = "offset-sm-4" %}
+        {% elsif forloop.rindex == 2 %}
+            {% assign offset_class = "offset-sm-2" %}
+        {% endif %}  
         <div class="row">
-            <div class="col-sm-4">
-                <a href="/people/alanna_schepartz.html">
+    {% endif %}
+            <div class="col-sm-4 {{ offset_class }}">
+                <a href="{{ person.page }}">
                     <div class="vira-card">
                         <div class="vira-card-header">
-                            <img class="rounded-circle" src="img/team/schepartz_sq.jpg" alt="Alanna" width="140" height="140">
+                            <img class="rounded-circle" src="img/team/{{ person.pic }}" alt="{{ person.name }}" width="140" height="140">
                         </div>
                         <div class="vira-card-content">
-                            <h4>Alanna Schepartz</h4>
-                            <p class="text-muted">Principal Investigator</p>
-    <!--                         <div class="social-icons">
+                            <h4>{{ person.name }}</h4>
+                            <p class="text-muted">{{ person.role }}</p>
+        <!--                         <div class="social-icons">
                                 <ul>
                                     <a href="#"><li><span class="ion-social-facebook"></span></li></a>
                                     <a href="#"><li><span class="ion-social-twitter"></span></li></a>
@@ -121,94 +129,10 @@ title: GEM-NET Home
                     </div>
                 </a>
             </div>
-            <div class="col-sm-4">
-                <div class="vira-card">
-                    <div class="vira-card-header">
-                        <img class="rounded-circle" src="img/team/dieter_sq.jpg" alt="Dieter" width="140" height="140">
-                    </div>
-                    <div class="vira-card-content">
-                        <h4>Dieter Soll</h4>
-                        <p class="text-muted">Investigator</p>
-<!--                         <div class="social-icons">
-                            <ul>
-                                <a href="#"><li><span class="ion-social-facebook"></span></li></a>
-                                <a href="#"><li><span class="ion-social-twitter"></span></li></a>
-                            </ul>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="vira-card">
-                    <div class="vira-card-header">
-                        <img class="rounded-circle" src="img/team/jamie_sq.jpg" alt="Jamie" width="140" height="140">
-                    </div>
-                    <div class="vira-card-content">
-                        <h4>Jamie Cate</h4>
-                        <p class="text-muted">Investigator</p>
-<!--                         <div class="social-icons">
-                            <ul>
-                                <a href="https://twitter.com/jefftownsend" target="_blank"><li><span class="ion-social-facebook"></span></li></a>
-                                <a href="#"><li><span class="ion-social-twitter"></span></li></a>
-                            </ul>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="vira-card">
-                    <div class="vira-card-header">
-                        <img class="rounded-circle" src="img/team/farren_sq.jpg" alt="Farren" width="140" height="140">
-                    </div>
-                    <div class="vira-card-content">
-                        <h4>Farren Isaacs</h4>
-                        <p class="text-muted">Investigator</p>
-<!--                         <div class="social-icons">
-                            <ul>
-                                <a href="https://twitter.com/jefftownsend" target="_blank"><li><span class="ion-social-facebook"></span></li></a>
-                                <a href="#"><li><span class="ion-social-twitter"></span></li></a>
-                            </ul>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="vira-card">
-                    <div class="vira-card-header">
-                        <img class="rounded-circle" src="img/team/jeff_sq.jpg" alt="Alanna" width="140" height="140">
-                    </div>
-                    <div class="vira-card-content">
-                        <h4>Jeffrey Townsend</h4>
-                        <p class="text-muted">Knowledge Transfer</p>
-<!--                         <div class="social-icons">
-                            <ul>
-                                <a href="#"><li><span class="ion-social-facebook"></span></li></a>
-                                <a href="https://twitter.com/jefftownsend" target="_blank"><li><span class="ion-social-twitter"></span></li></a>
-                            </ul>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="vira-card">
-                    <div class="vira-card-header">
-                        <img class="rounded-circle" src="img/team/stephen_sq.jpg" alt="Alanna" width="140" height="140">
-                    </div>
-                    <div class="vira-card-content">
-                        <h4>Stephen Gaffney</h4>
-                        <p class="text-muted">Knowledge Transfer</p>
-<!--                         <div class="social-icons">
-                            <ul>
-                                <a href="#"><li><span class="ion-social-facebook"></span></li></a>
-                                <a href="#"><li><span class="ion-social-twitter"></span></li></a>
-                            </ul>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+    {% if row_ind == 2 or forloop.rindex0 == 0 %}
+        </div><!-- END OF PEOPLE ROW -->
+    {% endif %}
+{% endfor %}
     </div>
 </section>
 

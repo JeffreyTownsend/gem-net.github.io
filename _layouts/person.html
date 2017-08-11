@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="row">
+	<nav class="col-md-3 hidden-xs-down sidebar pt-3">
+		<h6 class="text-muted pt-3">Phase I C-GEM</h6>
+		<ul class="nav nav-pills flex-column">
+	{% for person in site.data.key_members %}
+		{% if page.url == person.page %}
+			{% assign active_str = "active" %}
+		{% else %}
+			{% assign active_str = "" %}
+		{% endif %}
+		<li class="nav-item">
+			<a class="nav-link {{ active_str }}" href="{{ person.page }}">{{ person.name }} <span class="sr-only">(current)</span></a>
+		</li>
+	{% endfor %}
+		</ul>
+	</nav>
+	<div class="col-md-9">
+		<div class="row">
+			<main class="offset-md-1 col-md-10 material-box">
+		{% for person in site.data.key_members %}
+			{% if page.url == person.page %}
+				<div class="person-header">
+					<img class="rounded-circle" src="/img/team/{{ person.pic }}" alt="{{ person.name }}" width="140" height="140">
+					<div>
+						<h1>{{ person.name }}</h1>
+						<h6 class="text-muted">{{ person.title }}</h6>
+						<h6 class="text-muted">{{ person.role }}</h6>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+				<div class="pt-3">
+					{{ content }}
+				</div>
+			</main>
+		</div>
+	</div>
+</div>

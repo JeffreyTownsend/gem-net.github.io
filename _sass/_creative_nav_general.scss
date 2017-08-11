@@ -1,0 +1,41 @@
+@import "creative/variables.scss";
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {background-color: $theme-primary;}
+
+// Styling for the navbar
+#mainNav {
+
+    -webkit-box-shadow: 0 0 6px 0 rgba(100,100,100,0.5); // SGG
+    -moz-box-shadow: 0 0 6px 0 rgba(100,100,100,0.5); // SGG
+    box-shadow: 0 0 6px 0 rgba(100,100,100,0.5); // SGG
+    .navbar-nav {
+        > li.nav-item {
+            > a.nav-link,
+            > a.nav-link:focus {
+                &.active {
+                    background-color: white;  // SGG
+                    &:hover {
+                        background-color: white;   // SGG
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        background-color: white; // SGG
+        .navbar-brand {
+            color: $theme-primary;  // SGG
+            &:hover,
+            &:focus {
+                color: darken($theme-primary, .1);  // SGG
+            }
+        }
+        .navbar-nav > li.nav-item > a.nav-link,
+        .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: $gray-darker; // SGG
+            &:hover {
+                color: $theme-primary; // SGG
+            }
+        }
+    }
+}

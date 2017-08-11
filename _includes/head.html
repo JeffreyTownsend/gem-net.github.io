@@ -1,52 +1,53 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="author" content="">
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta name="author" content="">
 
-    <!-- CREATIVE THEME STUFF -->
+  <!-- CREATIVE THEME STUFF -->
 
-    <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}"> -->
-    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="{{ "/assets/bootstrap.css" | relative_url }}">
+  <!-- Bootstrap core CSS -->
+  <!-- <link rel="stylesheet" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}"> -->
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="{{ "/assets/bootstrap.css" | relative_url }}">
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="{{ "/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="{{ "/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="{{ "/vendor/magnific-popup/magnific-popup.css" | relative_url }}" type="text/css">
-    
-    <!-- Custom styles for this template -->
-    <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="{{ "/assets/creative.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/vira-card.css" | relative_url }}">
-
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-
-
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="{{ "/vendor/magnific-popup/magnific-popup.css" | relative_url }}" type="text/css">
   
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
+  <!-- Custom styles for this template -->
+  <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
+  {% assign creative-css = include.creative-css | default: '/assets/creative-general.css' %}
+  <link rel="stylesheet" href="{{ creative-css | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/vira-card.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/gemnet-custom.css" | relative_url }}">
+
+  <!-- Temporary navbar container fix -->
+  <style>
+  .navbar-toggler {
+      z-index: 1;
+  }
+  
+  @media (max-width: 576px) {
+      nav > .container {
+          width: 100%;
+      }
+  }
+  </style>
+
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+{% include google-analytics.html %}
+{% endif %}
 </head>
