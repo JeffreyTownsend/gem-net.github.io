@@ -246,15 +246,15 @@ title: GEM-NET Home
             <div class="col-lg-8 offset-lg-2 text-center">
                 <h2 class="section-heading">Let's Get In Touch!</h2>
                 <hr class="primary">
-                <p>Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p>Contact us on Twitter or send us an email and we will get back to you as soon as possible!</p>
             </div>
             <div class="col-lg-4 offset-lg-2 text-center">
-                <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>123-456-6789</p>
+                <i class="fa fa-twitter fa-3x sr-contact"></i>
+                <p><a href="#">@{{ site.twitter_username }}</a></p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:your-email@your-domain.com">feedback@gem-net.net</a></p>
+                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             </div>
         </div>
     </div>

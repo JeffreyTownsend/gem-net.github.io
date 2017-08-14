@@ -2,7 +2,7 @@
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
-    @media (min-width: 992px) {
+    @media (min-width: 768px) { // SGG: was 992px
         margin: 20px auto 0;
     }
     p {

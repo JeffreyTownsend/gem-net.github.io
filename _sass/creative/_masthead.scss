@@ -2,13 +2,18 @@
 header.masthead {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100vh;  // sgg: was auto
     text-align: center;
     color: white;
     background-image: url('/img/How_proteins_are_made_NSF_dark.jpg');
     background-position: center;
     @include background-cover;
     .header-content {
+        min-height: 100vh; // SGG
+        display: flex; // SGG
+        flex-direction: column; // SGG
+        justify-content: space-around; // SGG
+
         position: relative;
         width: 100%;
         padding: 100px 15px 100px;
@@ -37,7 +42,7 @@ header.masthead {
     }
     @media (min-width: 768px) {
         height: 100%;
-        min-height: 600px;
+        min-height: 100vh;  // sgg: was 600px
         .header-content {
             position: absolute;
             top: 50%;

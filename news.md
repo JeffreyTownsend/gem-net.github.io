@@ -3,23 +3,27 @@ layout: misc
 title: News
 permalink: /news/
 ---
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 
 <div class="home">
 
-  <h1 class="page-heading">News</h1>
+  <h1 class="page-heading text-center">News</h1>
+  <hr />
 
-  <ul class="post-list">
+  <!-- <ul class="post-list"> -->
+  <dl class="row post-list">
     {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+        <dt class="col-md-2 post-meta text-md-right text-muted"><small>{{ post.date | date: date_format }}</small></dt>
+        <dd class="col-md-10">
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <div class="text-muted">
+            {{ post.excerpt }}
+          </div>
+        </dd>
     {% endfor %}
-  </ul>
+  </dl>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
