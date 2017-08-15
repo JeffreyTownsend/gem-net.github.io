@@ -70,7 +70,7 @@ title: GEM-NET Home
                 <h2 class="section-heading text-white">Our mission</h2>
                 <hr class="light">
                 <p class="text-faded" markdown="1">{% include txt/mission.txt %}</p>
-                <a class="btn btn-default btn-xl sr-button" href="#science">How it works</a>
+                <a class="btn btn-primary btn-xl sr-button" href="#science">How it works</a>
             </div>
         </div>
     </div>
