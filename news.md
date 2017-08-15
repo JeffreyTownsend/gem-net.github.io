@@ -14,13 +14,16 @@ permalink: /news/
   <dl class="row post-list">
     {% for post in site.posts %}
         <dt class="col-md-2 post-meta text-md-right text-muted"><small>{{ post.date | date: date_format }}</small></dt>
-        <dd class="col-md-10">
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h3>
-          <div class="text-muted">
-            {{ post.excerpt }}
-          </div>
+        <dd class="col-md-10" style="display:flex; justify-content:flex-start;">
+          {% if post.im %}<div><img class="img-responsive mr-3" src="{{ post.im }}" alt="" height="100px"></div>{% endif %}
+          <div>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            <div class="text-muted">
+              {{ post.excerpt }}
+            </div>
+        </div>
         </dd>
     {% endfor %}
   </dl>
