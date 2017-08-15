@@ -5,4 +5,4 @@ categories: people
 permalink: /a_surprise_visit
 ---
 
-This morning we had a surprise drop in from friend-of-C-GEM and noted polymer enthusiast, [President Barrack Obama](https://www.barackobama.com/).
+This morning we had a surprise drop in from friend of C-GEM and noted polymer enthusiast, [President Barack Obama](https://www.barackobama.com/).

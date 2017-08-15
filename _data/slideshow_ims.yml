@@ -1,0 +1,34 @@
+- full: img/demo/ecoli_blue.jpg
+  thumb: img/demo/ecoli_blue.jpg
+  categ: ''
+  name: experimental inputs
+
+
+- full: img/demo/output_g.gif
+  thumb: img/demo/thumb_output_g.gif
+  categ: ''
+  name: sequence outputs
+
+
+- full: img/demo/product_olefins.png
+  thumb: img/demo/thumb_product_olefins.png
+  categ: products
+  name: polyolefins
+
+
+- full: img/demo/product_urethanes.png
+  thumb: img/demo/thumb_product_urethanes.png
+  categ: products
+  name: polyurethanes
+
+
+- full: img/demo/product_ketones.png
+  thumb: img/demo/thumb_product_ketones.png
+  categ: products
+  name: poly-ketones
+
+
+- full: img/demo/product_aramids.png
+  thumb: img/demo/thumb_product_aramids.png
+  categ: products
+  name: aramids
