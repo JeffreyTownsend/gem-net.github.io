@@ -186,7 +186,7 @@ title: GEM-NET Home
             </div>
             <div class="col-lg-4 offset-lg-2 text-center">
                 <i class="fa fa-twitter fa-3x sr-contact"></i>
-                <p><a href="#">@{{ site.twitter_username }}</a></p>
+                <p><a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a></p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
