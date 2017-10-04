@@ -2,29 +2,32 @@
   role: Principal Investigator
   pic: schepartz_sq.jpg
   page: /people/alanna_schepartz.html
-  title: "Sterling Professor, Yale University"
+  title: "Sterling Professor of Chemistry, Yale University"
 
 
 - name: Dieter Soll
   role: Investigator
   pic: dieter_sq.jpg
   page: /people/dieter_soll.html
+  title: "Sterling Professor of Molecular Biophysics and Biochemistry and Professor of Chemistry, Yale University"
 
 
 - name: Jamie Cate
   role: Investigator
   pic: jamie_sq.jpg
   page: /people/jamie_cate.html
+  title: "Professor of Biochemistry, Biophysics and Structural Biology, Berkeley"
 
 
 - name: Farren Isaacs
   role: Investigator
   pic: farren_sq.jpg
   page: /people/farren_isaacs.html
+  title: "Associate Professor of Molecular, Cellular and Developmental Biology, Yale University"
 
 
 - name: Jeffrey Townsend
   role: Investigator
   pic: jeff_sq.jpg
   page: /people/jeffrey_townsend.html
-  title: "Elihu Associate Professor, Yale University"
+  title: "Elihu Associate Professor of Biostatistics and of Ecology & Evolutionary Biology, Yale University"
