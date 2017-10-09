@@ -44,7 +44,7 @@
     &:focus {
         outline: none;
     }
-    @media (min-width: 768px) {
+    @include media (">=md") {  // SGG
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {

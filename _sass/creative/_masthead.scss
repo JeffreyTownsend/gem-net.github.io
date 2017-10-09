@@ -16,11 +16,11 @@ header.masthead {
 
         position: relative;
         width: 100%;
-        padding: 100px 15px 100px;
+        padding: 125px 15px 100px; // SGG
         text-align: center;
         .header-content-inner {
             h1 {
-                font-size: 30px;
+                // font-size: 30px; // SGG
                 font-weight: 700;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -30,26 +30,27 @@ header.masthead {
             hr {
                 margin: 30px auto;
             }
-            p {
-                font-size: 16px;
-                font-weight: 300;
+            .subheading {
+                // font-size: 16px;  // SGG
+                // font-weight: 300;  // SGG
+                font-size: $font-size-h3;
                 margin-bottom: 50px;
-                // color: fade-out(white, .1);
+                color: fade-out(white, .1);
                 color: white;
                 text-shadow: black 0.1em 0.1em 0.2em;
             }
         }
     }
-    @media (min-width: 768px) {
-        height: 100%;
-        min-height: 100vh;  // sgg: was 600px
+    @include media (">=md") {
+        // height: 100%;
+        // min-height: 100vh;  // sgg: was 600px
         .header-content {
-            position: absolute;
-            top: 50%;
+            // position: absolute;
+            // top: 50%;
             padding: 0 50px;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            // -webkit-transform: translateY(-50%);
+            // -ms-transform: translateY(-50%);
+            // transform: translateY(-50%);
             .header-content-inner {
                 max-width: 1000px;
                 margin-right: auto;
@@ -57,8 +58,8 @@ header.masthead {
                 h1 {
                     font-size: 50px;
                 }
-                p {
-                    font-size: 18px;
+                .subheading {
+                    // font-size: 18px;
                     max-width: 80%;
                     margin-right: auto;
                     margin-left: auto;

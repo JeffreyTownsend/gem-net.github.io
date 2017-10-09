@@ -6,6 +6,7 @@
     @include transition-all;
     .navbar-brand {
         font-weight: 700;
+        font-size: $nav-font-size; // sgg
         text-transform: uppercase;
         color: $theme-primary;
         @include sans-serif-font;
@@ -13,19 +14,20 @@
         &:focus {
             color: darken($theme-primary, .1);
         }
-
     }
-    .navbar-toggle {
-        font-size: 12px;
+    // TOGGLE BUTTON. HIDDEN WHEN LARGE
+    .navbar-toggler {
+        font-size: $nav-font-size; // sgg
         font-weight: 700;
         text-transform: uppercase;
         color: $gray-darker;
     }
+    // NAV LINKS DEFAULTS + WHEN SMALL
     .navbar-nav {
         > li.nav-item {
             > a.nav-link,
             > a.nav-link:focus {
-                font-size: 13px;
+                font-size: $nav-font-size;  // sgg
                 font-weight: 700;
                 text-transform: uppercase;
                 color: $gray-darker;
@@ -42,7 +44,7 @@
             }
         }
     }
-    @media (min-width: 768px) {
+    @include media (">=md") {  // SGG
         border-color: fade-out(white, .7);
         background-color: transparent;
         .navbar-brand {
@@ -59,11 +61,12 @@
                 color: white;
             }
         }
+        // SHRINK / WHITE
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .95);
             background-color: white;
             .navbar-brand {
-                font-size: 16px;
+                // font-size: $font-size-xs;  // sgg
                 color: $theme-primary;
                 &:hover,
                 &:focus {
@@ -79,4 +82,7 @@
             }
         }
     }
+    // @include media (">=lg") {  // SGG
+    //     font-size: $font-size-lg;  // sgg
+    // }
 }

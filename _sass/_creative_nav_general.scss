@@ -21,7 +21,7 @@
             }
         }
     }
-    @media (min-width: 768px) { // SGG: was 992px
+    @include media (">=md") { // SGG: was 992px
         background-color: white; // SGG
         .navbar-brand {
             color: $theme-primary;  // SGG

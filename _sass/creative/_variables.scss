@@ -2,7 +2,7 @@
 
 // Gray and Brand Colors for use across theme
 
-$nav-height:       75px;  // sgg
+$nav-height:       125px;  // sgg
 
 $theme-primary:    #F05F40; // #F05F40;e21c4b
 $theme-alt:        #3d60b2;
@@ -13,3 +13,55 @@ $gray-dark:		   lighten($gray-base, 20%) !default;   // #333
 $gray:			   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:	   lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:	   lighten($gray-base, 93.5%) !default; // #eee
+
+
+// SGG, rest.
+
+$nav-font-size:    1rem; // same as h6, base
+
+//bootstrap
+$font-size-lg:   1.25rem !default; // h5
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default; // lg
+$font-size-h6: 1rem !default; // base
+
+
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Start with assigning color names to specific hex values.
+$white:  #fff !default;
+$black:  #000 !default;
+$red:    #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green:  #5cb85c !default;
+$blue:   #0275d8 !default;
+$teal:   #5bc0de !default;
+$pink:   #ff5b77 !default;
+$purple: #613d7c !default;
+
+// Create grayscale
+$gray-dark:                 #292b2c !default;
+$gray:                      #464a4c !default;
+$gray-light:                #636c72 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;

@@ -3,22 +3,22 @@ layout: person
 title: Jeffrey Townsend
 ---
 
-## Biography
+### Biography
 
 Jeffrey Townsend received his B.S. degree in Biology from Brown University in 1994. After teaching high school science for three years in Brooklyn, NY, Townsend pursued his Ph.D. in Organismic and Evolutionary Biology from Harvard University, receiving it in 2002, at which point he was appointed to a Miller Postdoctoral Fellowship in Plant and Microbial Biology at the University of California, Berkeley. In 2004, he was appointed as an Assistant Professor in Molecular and Cell Biology at the University of Connecticut. In 2006, he was appointed as an Assistant Professor in Ecology and Evolutionary Biology at Yale. In 2012, he was appointed as an Associate Professor in Biostatistics and Ecology & Evolutionary Biology, and in 2017 he was named Elihu Associate Professor of Biostatistics.
 
 
-## Research interests
+### Research interests
 
 Molecular and cell biology, evolutionary biology, the biology of gene expression, computational biology and the use of internet technology to facilitate and disseminate team-based research in the sciences.
 
 
-## Distinctions and Awards
+### Distinctions and Awards
 
 Jeffrey Townsend is the recipient of the Walter M. Fitch Young Investigator Award (2001) from the Society for Molecular Biology and Evolution, the Loftus-Hills Young Investigator Award (2005) from the American Society of Naturalists, and the Translational Research Prize (2016) from the Yale Cancer Center. He has served as an Associate Editor for the Journal of Molecular Evolution (2008–2016), and currently serves as an Associate Editor for the journals Molecular Biology and Evolution and Systematic Biology.  
 
 
-## Recent publications
+### Recent publications
 
 - Zhao Z., M.C. Campbell, N. Li, D.S.W. Lee, Z. Zhang, and **J.P. Townsend**, in press. Detection of regional variation in selection intensity within protein-coding genes using DNA sequence polymorphism and divergence. *Molecular Biology and Evolution*.
 
@@ -41,7 +41,7 @@ Jeffrey Townsend is the recipient of the Walter M. Fitch Young Investigator Awar
 - Zhang Z. and **J.P. Townsend**, 2009. Maximum-likelihood model averaging to profile clustering of site types across discrete linear sequences. *PLoS Computational Biology* 5(6): e1000421. 10.1371/journal.pcbi.1000421.
 
 
-## In the News
+### In the News
 
 - [Is Climate-Themed Fiction All Too Real? We Asked the Experts](https://www.nytimes.com/interactive/2017/09/26/climate/climate-books-fiction-scifi-novels.html)
 

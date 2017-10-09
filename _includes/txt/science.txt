@@ -1,5 +1,7 @@
 <div markdown="1">
-**C-GEM** seeks to solve a “Holy Grail” level problem in modern science: the inability to prepare polymers whose monomers are defined with protein-like control. Sequence-defined polymers possess extraordinary potential for information storage, anti-counterfeiting, drug delivery, remediation, even drug discovery, but strategies to prepare them are barely in their infancy. C-GEM will synthesize sequence-defined chemical polymers by repurposing the *E. coli* translational apparatus to promote bond-forming reactions between monomers that are not a-amino acids, but instead the building blocks for aramids, polyolefins, polyurethanes, even polyketide precursors.
+**C-GEM** seeks to solve a “Holy Grail” level problem in modern science: the inability to prepare polymers whose monomers are defined with protein-like control. Sequence-defined polymers possess extraordinary potential for information storage, anti-counterfeiting, drug delivery, remediation, even drug discovery, and much more, but strategies to prepare them are barely in their infancy.
+
+C-GEM will synthesize sequence-defined chemical polymers by repurposing the *E. coli* translational apparatus to promote bond-forming reactions between monomers that are not a-amino acids, but instead the building blocks for aramids, polyolefins, polyurethanes, even polyketide precursors.
 </div>
 
 <div class="collapse" id="collapseExample" markdown="1">

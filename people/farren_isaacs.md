@@ -3,22 +3,22 @@ layout: person
 title: Farren Isaacs
 ---
 
-## Biography
+### Biography
 
 Farren Isaacs received a B.S.E. (1996) degree in Bioengineering from the University of Pennsylvania, his M.S.E. (2000) in Biomedical Engineering and Ph.D. (2003) in Bioinformatics from Boston University. Following postdoctoral work at Harvard Medical School, in 2011 he joined the faculty of the Molecular, Cellular, and Developmental Biology Department and Systems Biology Institute at Yale University. In 2017, he was appointed Associate Professor (with tenure).
 
 
-## Research interests
+### Research interests
 
 Our research is focused on developing foundational genomic and biomolecular engineering technologies to understand and engineer biological systems. Creating a fusion between biology, chemistry, engineering and the development of molecular technologies, our approach is rooted in the construction of genes, networks and whole genomes alongside quantitative models to gain a better understanding of biological systems. In turn, we utilize these insights to design and evolve living cells with prescribed functions that address global challenges in food and energy supply, environmental health, and medicine. Current topics include: (1) the design and construction of Genomically Recoded Organisms (GROs), in which codons have been reassigned to create alternative genetic codes; (2) the development of genome engineering technologies for global reprogramming of cellular behavior to uncover new biological phenomena and expand functions of living systems; (3) establishment of novel strategies of genetic isolation and biocontainment for biosafety; and (4) evolution of the entire translation apparatus to permit genetically encoded proteins and sequence-defined polymers with diverse and unnatural chemistries.
 
 
-## Distinctions and Awards
+### Distinctions and Awards
 
 Farren Isaacs has received numerous awards for his work, being recognized as a “Rising Young Star of Science” by Genome Technology Magazine (2008), Beckman Young Investigator by the Arnold and Mabel Beckman Foundation (2012), Gen9 Prize (2014), DuPont Young Professor Award by DuPont, Inc. (2014). He served the synthetic biology community by assuming the roles of Vice Chair (2015) and Chair (2017) of the Gordon Research Conference in Synthetic Biology. In 2016, he began serving the chemical biology community as an Associate Editor of the ACS journal Biochemistry.
 
 
-## Recent publications
+### Recent publications
 
 - Genomically recoded organisms expand biological functions. Lajoie MJ, Rovner AJ, Goodman DB, Aerni H-R, Haimovich AD, Kuznetsov G, Mercer JA, Wang HH, Carr PA, Mosberg JA, Rohland N, Schultz PG, Jacobson JM, Rinehart J, Church GM, & **Isaacs FJ**. *Science*, 2013, 342, 357-60.
 

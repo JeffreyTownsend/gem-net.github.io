@@ -1,5 +1,8 @@
+@import "creative/variables.scss";
+
+
 // Define defaults for each variable.
-$nav-height: 75px;
+$nav-height: 125px;
 $footer-height: 110px;
 
 
@@ -60,6 +63,10 @@ $base-font-size:   16px !default;
 .post-list > li {
   margin-bottom: 1.5rem;
   list-style-type: circle;
+}
+
+.post-list > dt {
+  font-size: 1rem;
 }
 
 .post-meta {
@@ -150,5 +157,18 @@ blockquote {
 
   > :last-child {
     margin-bottom: 0;
+  }
+}
+
+.person-bio {
+  h3 {
+    font-size: $font-size-h5;
+    font-weight: 700;
+  }
+}
+
+.front-section {
+  p {
+    font-size: $font-size-h5;
   }
 }

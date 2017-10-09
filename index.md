@@ -8,7 +8,7 @@ title: GEM-NET Home
         <div class="header-content-inner">
             <h1 id="homeHeading">Center for Genomically Encoded Materials</h1>
             <hr>
-            <p>Transforming the fabric of society with genetically encoded chemical polymers</p>
+            <h3 class='subheading'>Transforming the fabric of society with genetically encoded chemical polymers</h3>
             <a class="btn btn-primary btn-xl" href="#about">Learn More</a>
         </div>
     </div>
@@ -16,11 +16,11 @@ title: GEM-NET Home
 </header>
 
 
-<section id="about">
+<section id="about" class="front-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">About Us</h2>
+                <h2 class="section-heading">About C-GEM</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -29,30 +29,30 @@ title: GEM-NET Home
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-flag text-primary sr-icons"></i>
+                    <i class="fa fa-3x fa-flag text-primary sr-icons"></i>
                     <a href="#mission"><h3>Our mission</h3></a>
-                    <p class="text-muted">Re-engineering the ribosome</p>
+                    <h5 class="text-muted">Establish a fundamentally new form of chemical matter</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-flask text-primary sr-icons"></i>
+                    <i class="fa fa-3x fa-flask text-primary sr-icons"></i>
                     <a href="#science"><h3>The Science</h3></a>
-                    <p class="text-muted">Making the materials of tomorrow</p>
+                    <h5 class="text-muted">Re-engineering the cell's protein synthesizing machine</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-users text-primary sr-icons"></i>
+                    <i class="fa fa-3x fa-users text-primary sr-icons"></i>
                     <a href="#team"><h3>Our Team</h3></a>
-                    <p class="text-muted">A multi-institution collaboration</p>
+                    <h5 class="text-muted">A multi-institution collaboration</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                    <i class="fa fa-3x fa-newspaper-o text-primary sr-icons"></i>
                     <a href="news"><h3>Latest News</h3></a>
-                    <p class="text-muted">Hot off the press</p>
+                    <h5 class="text-muted">Hot off the press</h5>
                 </div>
             </div>
         </div>
@@ -60,29 +60,27 @@ title: GEM-NET Home
 </section>
 
 
-
-
-
-<section class="bg-primary" id="mission">
+<section class="bg-primary front-section" id="mission">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 text-center">
                 <h2 class="section-heading text-white">Our mission</h2>
                 <hr class="light">
-                <p class="text-faded" markdown="1">{% include txt/mission.txt %}</p>
+                <div class="text-faded" markdown="1">{% include txt/mission.txt %}</div>
                 <a class="btn btn-primary btn-xl sr-button" href="#science">How it works</a>
             </div>
         </div>
     </div>
 </section>
 
-<section id="science">
+
+<section id="science" class="front-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 text-center">
                 <h2 class="section-heading">The science</h2>
-                <i class="fa fa-4x fa-flask text-primary sr-icons"></i>
-                <!-- <hr class="primary"> -->
+                <!-- <i class="fa fa-2x fa-flask text-primary sr-icons"></i> -->
+                <hr class="primary">
                 <div markdown="1">{% include txt/science.txt %}</div>
             </div>
         </div>
@@ -92,7 +90,7 @@ title: GEM-NET Home
         {% for im in site.data.slideshow_ims %}
             <div class="col-lg-4 col-sm-6">
                 <a class="portfolio-box" href="{{ im.full }}">
-                    <img class="img-fluid" src="{{ im.thumb }}" alt="">
+                    <img class="img-fluid" src="{{ im.thumb }}" alt="" style="width: 100%;">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -115,7 +113,7 @@ title: GEM-NET Home
 </section>
 
 
-<section id="team" class="bg-faded">
+<section id="team" class="bg-faded front-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -166,9 +164,6 @@ title: GEM-NET Home
 </section> -->
 
 
-
-
-
 <!-- <div class="call-to-action bg-dark">
     <div class="container text-center">
         <h2>Free Download at Start Bootstrap!</h2>
@@ -176,7 +171,7 @@ title: GEM-NET Home
     </div>
 </div> -->
 
-<section id="contact">
+<section id="contact" class="front-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">
