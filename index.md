@@ -6,7 +6,7 @@ title: GEM-NET Home
 <header class="masthead">
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 id="homeHeading">Center for Genomically Encoded Materials</h1>
+            <h1 id="homeHeading">Center for Genetically Encoded Materials</h1>
             <hr>
             <h3 class='subheading'>Transforming the fabric of society with genetically encoded chemical polymers</h3>
             <a class="btn btn-primary btn-xl" href="#about">Learn More</a>
