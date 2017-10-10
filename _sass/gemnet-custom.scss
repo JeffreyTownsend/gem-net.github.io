@@ -6,6 +6,11 @@ $nav-height: 125px;
 $footer-height: 110px;
 
 
+.navbar-nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .nav-top-padding {
 	padding-top: $nav-height;
 }
