@@ -6,6 +6,11 @@ $nav-height: 125px;
 $footer-height: 110px;
 
 
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-nav {
   flex-wrap: wrap;
   justify-content: flex-end;
