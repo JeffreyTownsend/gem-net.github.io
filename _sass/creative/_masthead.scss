@@ -2,67 +2,55 @@
 header.masthead {
     position: relative;
     width: 100%;
-    min-height: 100vh;  // sgg: was auto
+    min-height: 100vh;
     text-align: center;
     color: white;
     background-image: url('/img/How_proteins_are_made_NSF_dark.jpg');
     background-position: center;
     @include background-cover;
     .header-content {
-        min-height: 100vh; // SGG
-        display: flex; // SGG
-        flex-direction: column; // SGG
-        justify-content: space-around; // SGG
-
+        min-height: 100vh;
         position: relative;
-        width: 100%;
-        padding: 125px 15px 100px; // SGG
-        text-align: center;
+        max-width: 80%;
+        display: flex;  // vertically center content-inner div
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 125px;
+        padding-bottom: 30px;
         .header-content-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             h1 {
-                // font-size: 30px; // SGG
                 font-weight: 700;
-                margin-top: 0;
-                margin-bottom: 0;
                 text-transform: uppercase;
                 text-shadow: black 0.1em 0.1em 0.2em;
             }
             hr {
+                width: 50px;
                 margin: 30px auto;
             }
-            .subheading {
-                // font-size: 16px;  // SGG
-                // font-weight: 300;  // SGG
-                font-size: $font-size-h3;
+            h3 {
                 margin-bottom: 50px;
                 color: fade-out(white, .1);
                 color: white;
                 text-shadow: black 0.1em 0.1em 0.2em;
             }
+            a {
+                align-self: center;
+            }
         }
     }
     @include media (">=md") {
-        // height: 100%;
-        // min-height: 100vh;  // sgg: was 600px
         .header-content {
-            // position: absolute;
-            // top: 50%;
-            padding: 0 50px;
-            // -webkit-transform: translateY(-50%);
-            // -ms-transform: translateY(-50%);
-            // transform: translateY(-50%);
             .header-content-inner {
                 max-width: 1000px;
-                margin-right: auto;
-                margin-left: auto;
                 h1 {
                     font-size: 50px;
                 }
-                .subheading {
+                h3 {
                     // font-size: 18px;
-                    max-width: 80%;
-                    margin-right: auto;
-                    margin-left: auto;
                 }
             }
         }
