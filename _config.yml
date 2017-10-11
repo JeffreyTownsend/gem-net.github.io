@@ -16,9 +16,7 @@
 title: GEM-NET
 email: info@gem-net.net
 description: > # this means to ignore newlines until "baseurl:"
-  GEM-NET is the home of C-GEM. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  GEM-NET is the home of C-GEM, part of the NSF's Centers for Chemical Innovation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gem-net.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cgem_cci
