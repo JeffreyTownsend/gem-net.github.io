@@ -57,7 +57,7 @@ We might also consider making use of the *biospecimen repository* feature of Ben
 
 ## Asana: sequence discussion and sample request tracking
 
-![Asana demo]({{site.url}}/img/data-plan/asana_sequences.jpg)
+![Asana demo](/img/data-plan/asana_sequences.jpg)
 *The two C-GEM sequences shown in Asana. Each sequence has its own discussion thread.*
 
 Asana will provide a space for discussing individual sequences, and provide a means of requesting samples from C-GEM collaborators in other labs, and keeping track of these requests.
@@ -66,7 +66,7 @@ Asana is a cloud-based task list application accessible from web browsers, a mob
 
 The initial plan for Asana is to maintain two task lists (called 'Projects' in Asana): one for request tracking and one for discussing sequences in Benchling. The request tracking list will function more like a traditional to-do list (with items being marked complete on delivery), while items on the sequence discussion list will provide a stable home for sequence-specific discussion with links to Benchling. In both cases, new list items can be created by typing directly into the list as if it were a text file, or by sending an email to a list-specific address. (Alternatively, multiple tasks can be added in bulk using the API.) Further data associated with the item (an extended description, tags, file attachments, an assignee) can be added and edited at any time. The number of items in each list can be followed using Asana's dashboard view, shown in the image below.
 
-![Asana dashboard]({{site.url}}/img/data-plan/asana_dashboard.jpg)
+![Asana dashboard](/img/data-plan/asana_dashboard.jpg)
 *The Asana dashboard provides a quick overview of sequence/request counts over time.*
 
 A sample request and follow-up would involve the following steps:
