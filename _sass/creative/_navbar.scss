@@ -45,6 +45,14 @@
             }
         }
     }
+
+    &.navbar-shrink {
+        padding: 0;
+        img {
+            max-height: 40px;
+        }
+    }
+
     @include media (">=md") {  // SGG
         border-color: fade-out(white, .7);
         background-color: transparent;
@@ -76,7 +84,7 @@
             }
             .navbar-nav > li.nav-item > a.nav-link,
             .navbar-nav > li.nav-item > a.nav-link:focus {
-                color: $gray-darker;
+                color: $gray-light;
                 &:hover {
                     color: $theme-primary;
                 }
